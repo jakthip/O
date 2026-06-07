@@ -1,44 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <base target="_top">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      /* ปรับ CSS ให้เป็น Mobile First */
-      body { font-family: sans-serif; padding: 10px; }
-      table { width: 100%; border-collapse: collapse; table-layout: fixed; }
-      th, td { 
-        padding: 8px; 
-        border-bottom: 1px solid #ddd; 
-        word-wrap: break-word; /* กันคำยาวเกินไปแล้วล้น */
-        font-size: 14px; 
-      }
-      /* กรณีอยากให้แสดงเป็นรายการแทนตารางบนมือถือ */
-      @media screen and (max-width: 600px) {
-        table, thead, tbody, th, td, tr { display: block; }
-        thead { display: none; } /* ซ่อนหัวตารางบนมือถือ */
-        tr { margin-bottom: 15px; border: 1px solid #ccc; padding: 10px; }
-        td { border: none; position: relative; padding-left: 50%; }
-        td:before { position: absolute; left: 6px; font-weight: bold; content: attr(data-label); }
-      }
-    </style>
-  </head>
-  <body>
-    <table>
-      <thead>
-        <tr>
-          <th>รายการ</th>
-          <th>เดือน</th>
-          <th>ผู้รับผิดชอบ</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="รายการ">จักรยานเด็ก</td>
-          <td data-label="เดือน">มิ.ย. 69</td>
-          <td data-label="ผู้รับผิดชอบ">จีน</td>
-        </tr>
-        </tbody>
-    </table>
-  </body>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายการผ่อน SPayLater</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon1.png">
+  <link rel="icon" type="image/png" href="favicon1.png">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="SPayLater">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbwML4a9izVLLPS6BQZv32Ec-PZr4-9VLqtMPIA49bT-Lb46zeEpjoZEs6ElEOBNtxvfiA/exec"
+    scrolling="auto"
+    allowfullscreen>
+  </iframe>
+</body>
 </html>
